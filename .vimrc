@@ -26,6 +26,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'roxma/vim-paste-easy'
 
+Plug 'yuratomo/w3m.vim'
+
 Plug 'tpope/vim-commentary'
 
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
