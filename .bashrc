@@ -133,11 +133,9 @@ alias node='node --use_strict'
 
 alias aliyun='ssh sinow@sinow.top'
 
-alias huawei='ssh root@139.9.139.128'
-
 alias huawei2='ssh root@121.36.4.135'
 
-alias huawei3='ssh root@124.70.95.41'
+alias fenbushi='ssh std2019080901001@121.48.162.151'
 
 alias jichuang='ssh -p 8000 root@sinow.top'
 

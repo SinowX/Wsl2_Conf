@@ -40,7 +40,7 @@ noremap <m-p> :LeaderfFunction<cr>
 " 不使用 separator
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 " 定位项目root
-let g:Lf_RootMarkers = ['.project', '.root', '.svn','.git', 'compile_commands.json']
+let g:Lf_RootMarkers = ['.project', '.root', '.svn','.git', 'compile_commands.json', '.clang-format']
 " 模糊查找忽略文件、目录
 let g:Lf_WildIgnore = {
 		\ 'dir':['.git','.ccls-cache','CMakeFiles'],
@@ -76,12 +76,12 @@ nnoremap <F11> :AsyncRun
 " 在项目根目录执行shell命令
 nnoremap <F12> :AsyncRun -cwd=<root> 
 " 定位项目root
-let g:asyncrun_rootmarks = ['.svn', '.git', '.root', 'compile_commands.json']
+let g:asyncrun_rootmarks = ['.svn', '.git', '.root', 'compile_commands.json', 'clang-format']
 
 " ###自动运行 ctags，辅助language server查找变量###
 Plug 'ludovicchabant/vim-gutentags'
 " gutentags 搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
-let g:gutentags_project_root = ['.git']
+let g:gutentags_project_root = ['.git', 'clang-format', '.ccls', 'compile_commands.json', '.root']
 " 所生成的数据文件的名称
 let g:gutentags_ctags_tagfile = '.tags'
 " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
